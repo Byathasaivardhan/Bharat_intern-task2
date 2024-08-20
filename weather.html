@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #54416d;
+        }
+        header {
+            background-color:#5fa6c2;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            text-align: center;
+        }
+        footer {
+            background-color:#31255a;
+            text-align: center;
+            padding: 1em;
+            color:#ddd;
+            border-top: 1px solid #54416d;
+        }
+        .weather-box {
+            background-color: #c3e4f3;
+            padding: 1em;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(185, 182, 182, 0.1);
+            width: 300px;
+            border-radius: 1.25em;
+            margin: 20px auto;
+            text-align: center;
+        }
+        #city-input {
+            padding: 0.3em;
+            font-size: 1.2em;
+            border: 1px solid #ccc;
+            border-radius: 0.4em;
+            width: 100%;
+        }
+        #get-weather-btn {
+            padding: 0.2em 2em;
+            font-size: 1.0em;
+            background-color: #12aad8;
+            color: white;
+            border: none;
+            border-radius: 0.4em;
+            cursor: pointer;
+        }
+        #weather-info {
+            font-size: 1.2em;
+            margin-top: 10px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SkySavvy-"know the sky,own the day"</h1>
+    </header>
+    <div class="content">
+        <div class="weather-box">
+            <input id="city-input" type="text" placeholder="Enter city name">
+            <button id="get-weather-btn">Get Weather</button>
+            <div id="weather-info"></div>
+        </div>
+    </div>
+    <footer id="weather-status">
+        
+    </footer>
+
+    <script src="weather.js"></script>
+</body>
+</html>
